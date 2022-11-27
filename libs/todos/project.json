@@ -1,0 +1,24 @@
+{
+  "name": "todos",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/todos/src",
+  "prefix": "todo-workspace",
+  "targets": {
+    "test": {
+      "executor": "@angular-devkit/build-angular:karma",
+      "options": {
+        "main": "libs/todos/src/test.ts",
+        "tsConfig": "libs/todos/tsconfig.spec.json",
+        "karmaConfig": "libs/todos/karma.conf.js"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["libs/todos/**/*.ts", "libs/todos/**/*.html"]
+      }
+    }
+  },
+  "tags": []
+}
