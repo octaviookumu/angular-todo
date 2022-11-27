@@ -432,7 +432,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
         <!--  WELCOME  -->
         <div id="welcome">
           <h1>
-            <span> Hello there, </span>
+            <span> Hello there, DEPLOYER </span>
             Welcome todo-app 👋
           </h1>
         </div>
