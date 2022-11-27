@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TodosListComponent } from './todos/todos-list/todos-list.component';
+import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
     {
         path: '',
-        component: TodosListComponent
+        component: MainComponent
       }
 ];
 

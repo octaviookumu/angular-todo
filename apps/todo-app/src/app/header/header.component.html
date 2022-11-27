@@ -1,1 +1,13 @@
-<p>header works!</p>
+<header class="header">
+    <h1>todos</h1>
+    <input
+      class="new-todo"
+      type="text"
+      name="todo"
+      placeholder="What needs to be done."
+      autofocus
+      [value]="text"
+      (keyup)="changeText($event)"
+      (keyup.enter)="addTodo()"
+    />
+  </header>
